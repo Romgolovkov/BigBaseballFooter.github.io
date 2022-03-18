@@ -1,0 +1,228 @@
+:root {
+    --theme1: #e02726;
+    --theme2: #0a2140;
+    --theme3: #f2ab27;
+    --theme4: #a67e33;
+    --theme5: #bababa;
+    --text: #ffffff;
+}
+
+h1 {
+    color: var(--theme2);
+    font-family: "Graduate", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+    margin: 10px 0;
+}
+
+h2 {
+    color: var(--theme3);
+    font-family: "Big Shoulders Inline Text", sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    margin: 0 8px;
+}
+
+h3 {
+    font-family: "Playball", cursive;
+}
+
+span {
+    display: block;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    height: 2570px;
+    overscroll-behavior-y: none;
+}
+
+.network-banner {
+    background-color: var(--theme3);
+    display: block;
+    min-height: 30px;
+    overflow: auto;
+}
+
+.network-banner p {
+    color: var(--theme2);
+    margin: auto 0;
+    padding: 8px 16px;
+    text-align: center;
+    font-family: "Playball", cursive;
+}
+
+.title-banner {
+    background-color: var(--theme3);
+    display: block;
+    min-height: 50px;
+    overflow: auto;
+}
+
+.main-container {
+    width: 100%;
+    height: 2100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.baseball-container {
+    z-index: 20;
+    display: block;
+    position: absolute;
+    background: url();
+    width: 20%;
+}
+
+.baseball-container:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    /* initial ratio of 1:1*/
+}
+
+.baseball-texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    background-image: url("https://assets.codepen.io/713593/baseball_texture.jpg");
+    background-size: 100%;
+    background-repeat: repeat;
+    background-position: 100% 50%;
+    margin: 8px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
+}
+
+.section {
+    box-sizing: border-box;
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    border-top: 20px solid var(--text);
+}
+
+.s1 {
+    background-color: var(--theme2);
+    top: 0;
+}
+
+.s2 {
+    background-color: var(--theme1);
+    z-index: 10;
+    top: 700px;
+}
+
+.s3 {
+    background-color: var(--theme2);
+    z-index: 10;
+    top: 1400px;
+}
+
+.game-info-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20%;
+}
+
+.game-info {
+    text-align: center;
+}
+
+.game-info span {
+    color: var(--theme5);
+    font-family: "Big Shoulders Inline Text", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#gi1 {
+    align-self: flex-start;
+}
+
+#gi2 {
+    align-self: flex-end;
+}
+
+#gi3 {
+    align-self: flex-start;
+}
+
+svg {
+    box-sizing: border-box;
+}
+
+.footer-graphics {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    box-sizing: border-box;
+    border-top: 20px solid var(--text);
+}
+
+.footer-text {
+    position: relative;
+    display: block;
+    padding-top: 20%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.bat {
+    box-sizing: border-box;
+    position: relative;
+    transform-origin: center left;
+    width: 100%;
+    z-index: 20;
+    overflow: hidden;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.footer {
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    min-height: 600px;
+    width: 100%;
+    background-color: var(--theme3);
+}
+
+.links-grid {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.links-grid a {
+    color: var(--theme2);
+    font-family: "Big Shoulders Inline Text", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 10px;
+    width: 30%;
+}
+
+small {
+    font-family: "Big Shoulders Inline Text", sans-serif;
+    color: var(--theme2);
+    margin-bottom: 20px;
+}
